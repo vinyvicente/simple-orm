@@ -39,9 +39,6 @@ class SimpleOrm
         $this->connect();
     }
 
-    /**
-     *
-     */
     private function connect()
     {
         try {
@@ -61,7 +58,7 @@ class SimpleOrm
             }
 
         } catch (\Exception $e) {
-            return false;
+            // skip errors
         }
     }
 
