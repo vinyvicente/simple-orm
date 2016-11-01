@@ -61,6 +61,7 @@ class SimpleOrm
             }
 
         } catch (\Exception $e) {
+            return false;
         }
     }
 
