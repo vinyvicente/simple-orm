@@ -28,6 +28,10 @@ class SimpleOrm
      */
     private $connected = false;
 
+    /**
+     * SimpleOrm constructor.
+     * @param array $config
+     */
     public function __construct(array $config)
     {
         $this->config = $config;
@@ -40,7 +44,7 @@ class SimpleOrm
      */
     private function connect()
     {
-        try{
+        try {
             $this->connection = new Connection();
             $this->connection->setHost($this->config['host'])
                 ->setUser($this->config['user'])

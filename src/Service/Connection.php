@@ -68,7 +68,7 @@ class Connection
     public function connect()
     {
         try {
-            $this->instance =  new \PDO(
+            $this->instance = new \PDO(
                 sprintf('%s:host=%s;port=%s;dbname=%s;charset=%s;',
                     $this->driver,
                     $this->host,
